@@ -1,5 +1,5 @@
-//var data = $.csv.toObjects(source.csv):
-//console.log(data);
+var data = $.csv.toObjects(source.csv):
+console.log(data);
 /*
 InputStream instream = new FileInputStream("data/source.csv");
 InputStreamReader inputreader = new InputStreamReader(instream);
