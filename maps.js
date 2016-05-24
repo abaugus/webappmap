@@ -63,7 +63,7 @@ function initialize() {
 
   var mapProp = {
 
-    center: new google.maps.LatLng(8.611911, 41.146056),
+    center: new google.maps.LatLng(28.636523,77.224962),
     zoom: 6,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
