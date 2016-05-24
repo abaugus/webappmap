@@ -31,7 +31,6 @@ function handle_files(files) {
                         window.alert(coordinates[count-1]);
                     }
                 }
-                window.alert("asdasd");
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
                 /*var locations = [];
@@ -40,7 +39,7 @@ function handle_files(files) {
                     bounds.extend(coordinates[c]);
                 }
                 map.fitBounds(bounds);
-                
+                */
                 var locations = [
                     ['Bondi Beach', -33.890542, 151.274856, 4],
                     ['Coogee Beach', -33.923036, 151.259052, 5],
@@ -61,7 +60,7 @@ function handle_files(files) {
                             infowindow.open(map, marker);
                         }
                     })(marker, i));
-                }*/
+                }
             }
 
         }
