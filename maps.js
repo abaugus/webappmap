@@ -1,6 +1,22 @@
-var data = $.csv.toObjects(source.csv):
-console.log(data);
-/*
+var txtFile = "source.csv"
+var file = new File(txtFile);
+
+file.open("r"); // open file with read access
+var str = "";
+while (!file.eof) {
+   // read each line of text
+   str += file.readln() + "\n";
+}
+file.close();
+alert(str);
+
+/*results = Papa.parse(file, {
+    delimiter: ",",
+    header: true,
+    dynamicTyping: true
+});
+console.log(results);
+*//*
 InputStream instream = new FileInputStream("data/source.csv");
 InputStreamReader inputreader = new InputStreamReader(instream);
 BufferedReader reader= new BufferedReader(inputreader);
