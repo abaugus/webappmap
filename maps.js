@@ -32,13 +32,13 @@ function handle_files(files) {
                 }
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
-                var locations = [];
+                /*var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
                     bounds.extend(coordinates[c]);
                 }
                 map.fitBounds(bounds);
-                var locations = [
+                */var locations = [
       ['Bondi Beach', -33.890542, 151.274856, 4],
       ['Coogee Beach', -33.923036, 151.259052, 5],
       ['Cronulla Beach', -34.028249, 151.157507, 3],
