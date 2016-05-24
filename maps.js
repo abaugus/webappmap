@@ -49,7 +49,7 @@ function handle_files(files) {
                     ['Maroubra Beach', -33.950198, 151.259302, 1]
                 ];
                 */for (var i = 0; i < locations.length; i++) {
-                    window.alert(locations[i]);
+                    window.alert(locations[i][0]+locations[i][1]);
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                         map: map
