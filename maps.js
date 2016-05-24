@@ -39,7 +39,9 @@ function handle_files(files) {
                     temp[1]=coordinates[c][1];
                     locations.push(temp);
                     bounds.extend(coordinates[c]);
-                    window.alert(temp);
+                    window.alert(temp[0]);
+                    window.alert(temp[1]);
+                    window.alert(locations);
                 }
                 map.fitBounds(bounds);
                 /*var locations = [
