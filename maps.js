@@ -33,24 +33,24 @@ function handle_files(files) {
                 }
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
-                /*var locations = [];
+                var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
                     bounds.extend(coordinates[c]);
+                    window.alert(locations[c]);
                 }
                 map.fitBounds(bounds);
-                */
-                var locations = [
+                /*var locations = [
                     ['Bondi Beach', 28.636523,77.224962, 4],
                     ['Coogee Beach', 30.636523,75.224962, 5],
                     ['Cronulla Beach', 32.636523,73.224962, 3],
                     ['Manly Beach', 34.636523,71.224962, 2],
                     ['Maroubra Beach', -33.950198, 151.259302, 1]
                 ];
-                for (var i = 0; i < coordinates.length; i++) {
-                    window.alert(coordinates[i]);
+                */for (var i = 0; i < locations.length; i++) {
+                    window.alert(locations[i]);
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
+                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                         map: map
                     });
 
