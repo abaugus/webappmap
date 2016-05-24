@@ -35,13 +35,15 @@ function handle_files(files) {
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     var temp = {};
+                    window.alert(coordinates[c][0]);
+                    window.alert(coordinates[c][1]);
                     temp[0]=coordinates[c][0];
                     temp[1]=coordinates[c][1];
                     locations[c]=temp;
                     bounds.extend(coordinates[c]);
-                    window.alert(temp[0]);
-                    window.alert(temp[1]);
-                    window.alert(locations);
+                    //window.alert(temp[0]);
+                    //window.alert(temp[1]);
+                    //window.alert(locations);
                 }
                 map.fitBounds(bounds);
                 /*var locations = [
