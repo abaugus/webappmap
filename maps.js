@@ -1,6 +1,5 @@
-var reader = new FileReader();
-content = reader.readAsText(source);
-console.log(content);
+var data = $.csv.toObjects(source):
+window.alert(data);
 /*
 InputStream instream = new FileInputStream("data/source.csv");
 InputStreamReader inputreader = new InputStreamReader(instream);
