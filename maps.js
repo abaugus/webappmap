@@ -22,7 +22,7 @@ function handle_files(files) {
                 var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
-                
+
                 for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
@@ -32,16 +32,16 @@ function handle_files(files) {
                         console.log(coordinates[count]);
                         count++;
                         marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(latitude, longitude),
-                        map: map
-                    });
+                            position: new google.maps.LatLng(latitude, longitude),
+                            map: map
+                        });
 
-                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                        return function() {
-                            //infowindow.setContent(locations[i][0]);
-                            infowindow.open(map, marker);
-                        }
-                    })(marker, i));
+                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            return function() {
+                                //infowindow.setContent(locations[i][0]);
+                                infowindow.open(map, marker);
+                            }
+                        })(marker, i));
                     }
                 }
                 var locations = [];
