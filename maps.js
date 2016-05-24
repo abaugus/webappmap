@@ -41,7 +41,7 @@ function handle_files(files) {
 
                 for (i = 0; i < locations.length; i++) {
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                         map: map
                     });
 
