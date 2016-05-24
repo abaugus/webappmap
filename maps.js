@@ -40,7 +40,8 @@ function handle_files(files) {
                 map.fitBounds(bounds);
 
                 for (i = 0; i < coordinates.length; i++) {
-                    marker = new google.maps.Marker({
+                    window.alert(coordinates[i]);
+                    /*marker = new google.maps.Marker({
                         position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
                         map: map
                     });
@@ -50,7 +51,7 @@ function handle_files(files) {
                             infowindow.open(map, marker);
                         }
                     })(marker, i));
-                }
+                */}
 
             }
 
