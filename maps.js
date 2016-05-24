@@ -1,4 +1,4 @@
-InputStream instream = new FileInputStream("data/source.csv");
+InputStream instream = new FileInputStream("source.csv");
 window.alert("sasd");
 
 InputStreamReader inputreader = new InputStreamReader(instream);
