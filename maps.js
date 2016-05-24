@@ -39,15 +39,14 @@ function handle_files(files) {
                 }
                 map.fitBounds(bounds);
 
-                for (i = 0; i < locations.length; i++) {
+                for (i = 0; i < coordinates.length; i++) {
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+                        position: new google.maps.LatLng(coordinates[0], coordinates[1]),
                         map: map
                     });
 
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
-                            infowindow.setContent(locations[i][0]);
                             infowindow.open(map, marker);
                         }
                     })(marker, i));
