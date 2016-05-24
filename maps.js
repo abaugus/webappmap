@@ -1,4 +1,4 @@
-var txtFile = "test.txt";
+var txtFile = "/Users/abhishekbind/Documents/nearbuy/Phase1/web/webappmap/test.txt";
 var file = new File(txtFile);
 
 file.open("r"); // open file with read access
