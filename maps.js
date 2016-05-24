@@ -34,11 +34,12 @@ function handle_files(files) {
                 var marker, i;
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
-                    var temp = [];
-                    temp.push(coordinates[c][0]);
-                    temp.push(coordinates[c][1]);
+                    var temp = {};
+                    temp['lat']=coordinates[c][0];
+                    temp['long']=coordinates[c][1];
                     locations.push(temp);
                     bounds.extend(coordinates[c]);
+                    window.alert(temp);
                 }
                 map.fitBounds(bounds);
                 /*var locations = [
@@ -49,10 +50,8 @@ function handle_files(files) {
                     ['Maroubra Beach', -33.950198, 151.259302, 1]
                 ];
                 */for (var i = 0; i < locations.length; i++) {
-                    window.alert(coordinates[i][0]);
-                    window.alert(coordinates[i][1]);
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+                        position: new google.maps.LatLng(locations[i].lat, locations[i].long),
                         map: map
                     });
 
