@@ -30,6 +30,7 @@ function handle_files(files) {
                         count++;
                     }
                 }
+                window.log("asdasd");
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
                 /*var locations = [];
