@@ -8,7 +8,7 @@ while (!file.eof) {
    str += file.readln() + "\n";
 }
 file.close();
-alert(str);
+window.alert(str);
 
 /*results = Papa.parse(file, {
     delimiter: ",",
