@@ -37,7 +37,7 @@ function handle_files(files) {
                     var temp = {};
                     temp[0]=coordinates[c][0];
                     temp[1]=coordinates[c][1];
-                    locations.push(temp);
+                    locations[c]=temp;
                     bounds.extend(coordinates[c]);
                     window.alert(temp[0]);
                     window.alert(temp[1]);
