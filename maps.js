@@ -1,4 +1,4 @@
-var txtFile = "source.csv"
+var txtFile = "source.csv";
 var file = new File(txtFile);
 
 file.open("r"); // open file with read access
@@ -41,7 +41,7 @@ for(LatLng pos : latLngList)
         .position(pos)
         .title("Title!")); // Don't necessarily need title
 }
-*/
+
 var address = 'New Delhi, India';
 var map = new google.maps.Map(document.getElementById('map'), { 
        mapTypeId: google.maps.MapTypeId.TERRAIN,
@@ -65,4 +65,4 @@ var map = new google.maps.Map(document.getElementById('map'), {
          // Google couldn't geocode this request. Handle appropriately.
       }
    });
-   
+   */
