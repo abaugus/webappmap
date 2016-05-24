@@ -1,4 +1,6 @@
-InputStream instream = new FileInputStream("source.csv");
+InputStream instream = new FileInputStream("data/source.csv");
+console.log(instream);
+/*
 InputStreamReader inputreader = new InputStreamReader(instream);
 BufferedReader reader= new BufferedReader(inputreader);
 List<LatLng> latLngList = new ArrayList<LatLng>();
@@ -18,7 +20,7 @@ for(LatLng pos : latLngList)
         .position(pos)
         .title("Title!")); // Don't necessarily need title
 }
-/*
+*//*
 var address = 'New Delhi, India';
 var map = new google.maps.Map(document.getElementById('map'), { 
        mapTypeId: google.maps.MapTypeId.TERRAIN,
