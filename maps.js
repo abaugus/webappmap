@@ -34,7 +34,10 @@ function handle_files(files) {
                 var marker, i;
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
-                    locations.push(coordinates[c]);
+                    var temp = [];
+                    temp.push(coordinates[c][0]);
+                    temp.push(coordinates[c][1]);
+                    locations.push(temp);
                     bounds.extend(coordinates[c]);
                 }
                 map.fitBounds(bounds);
