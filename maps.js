@@ -20,6 +20,9 @@ function handle_files(files) {
 
                 var count = 0;
                 var coordinates = [];
+                var infowindow = new google.maps.InfoWindow();
+                var marker, i;
+                
                 for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
@@ -29,7 +32,7 @@ function handle_files(files) {
                         console.log(coordinates[count]);
                         count++;
                         marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+                        position: new google.maps.LatLng(latitude, longitude),
                         map: map
                     });
 
@@ -41,8 +44,6 @@ function handle_files(files) {
                     })(marker, i));
                     }
                 }
-                var infowindow = new google.maps.InfoWindow();
-                var marker, i;
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     var temp = {};
