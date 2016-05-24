@@ -1,4 +1,4 @@
-var txtFile = "source.csv";
+var txtFile = "test.txt";
 var file = new File(txtFile);
 
 file.open("r"); // open file with read access
