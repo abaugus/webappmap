@@ -46,16 +46,8 @@ function handle_files(files) {
                 }
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
-                    var temp = {};
-                    window.alert(coordinates[c][0]);
-                    window.alert(coordinates[c][1]);
-                    temp[0]=coordinates[c][0];
-                    temp[1]=coordinates[c][1];
-                    locations[c]=temp;
+                    locations.push(coordinates[c]);
                     bounds.extend(coordinates[c]);
-                    //window.alert(temp[0]);
-                    //window.alert(temp[1]);
-                    //window.alert(locations);
                 }
                 map.fitBounds(bounds);
                 /*var locations = [
@@ -65,7 +57,7 @@ function handle_files(files) {
                     ['Manly Beach', 34.636523,71.224962, 2],
                     ['Maroubra Beach', -33.950198, 151.259302, 1]
                 ];
-                */for (var i = 0; i < locations.length; i++) {
+                for (var i = 0; i < locations.length; i++) {
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                         map: map
@@ -77,7 +69,7 @@ function handle_files(files) {
                             infowindow.open(map, marker);
                         }
                     })(marker, i));
-                }
+                }*/
             }
 
         }
