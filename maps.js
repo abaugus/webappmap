@@ -35,8 +35,8 @@ function handle_files(files) {
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     var temp = {};
-                    temp['lat']=coordinates[c][0];
-                    temp['long']=coordinates[c][1];
+                    temp[0]=coordinates[c][0];
+                    temp[1]=coordinates[c][1];
                     locations.push(temp);
                     bounds.extend(coordinates[c]);
                     window.alert(temp);
@@ -51,7 +51,7 @@ function handle_files(files) {
                 ];
                 */for (var i = 0; i < locations.length; i++) {
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i].lat, locations[i].long),
+                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                         map: map
                     });
 
