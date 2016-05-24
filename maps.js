@@ -1,5 +1,5 @@
 InputStream instream = new FileInputStream("data/source.csv");
-console.log(instream);
+console.log("asdas");
 /*
 InputStreamReader inputreader = new InputStreamReader(instream);
 BufferedReader reader= new BufferedReader(inputreader);
