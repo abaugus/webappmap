@@ -47,16 +47,16 @@ function handle_files(files) {
                     ['Manly Beach', 34.636523,71.224962, 2],
                     ['Maroubra Beach', -33.950198, 151.259302, 1]
                 ];
-                for (var i = 0; i < locations.length; i++) {
-                    window.alert(locations[i]);
+                for (var i = 0; i < coordinates.length; i++) {
+                    window.alert(coordinates[i]);
                     marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
                         map: map
                     });
 
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
-                            infowindow.setContent(locations[i][0]);
+                            //infowindow.setContent(locations[i][0]);
                             infowindow.open(map, marker);
                         }
                     })(marker, i));
