@@ -30,6 +30,8 @@ function handle_files(files) {
                         count++;
                     }
                 }
+                var infowindow = new google.maps.InfoWindow();
+                var marker, i;
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
