@@ -8,7 +8,7 @@ window.alert(dist);
 
 
 //function getRadius(){
-    window.alert(document.getElementById("range").innerHTML);
+    window.alert(document.getElementById("range"));
     //return document.getElementById(range);
 //}
 
