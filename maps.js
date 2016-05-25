@@ -34,7 +34,7 @@ function handle_files(files) {
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
                         //window.alert(getRadius());
-                        window.alert(coordinates[count],center);
+                        window.alert(Distance(coordinates[count],center));
                         if(Distance(coordinates[count],center)<=getRadius())
                         {
                             marker = new google.maps.Marker({
