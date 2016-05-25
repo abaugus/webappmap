@@ -10,7 +10,7 @@ function showValue(newValue){
 }
 
 function getRadius(){
-	window.alert(radius);
+	//window.alert(radius);
     return radius;
 }
 var r = getRadius();
