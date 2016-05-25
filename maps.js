@@ -33,18 +33,21 @@ function handle_files(files) {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
-                        count++;
-                        marker = new google.maps.Marker({
+                        if(Distance(coordinates[count],center)<=getRadius())
+                        {
+                            marker = new google.maps.Marker({
                             position: new google.maps.LatLng(latitude, longitude),
                             map: map
-                        });
+                            });
 
-                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
                                 //infowindow.setContent(locations[i][0]);
                                 infowindow.open(map, marker);
                             }
-                        })(marker, i));
+                            })(marker, i));
+                        }
+                        count++;
                     }
                 }
                 var locations = [];
