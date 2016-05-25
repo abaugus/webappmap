@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
-   <title>nearbuy Phase 1</title> 
-   <!--<script src="http://maps.google.com/maps/api/js?sensor=false" 
-           type="text/javascript"></script> 
-    -->
-</head> 
-<body> 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-	<input type="file" name="file" id="file" onchange="handle_files(this.files)" />
-	<div id="googleMap" style="width: 1280px; height: 800px;"></div>
-   <!--<div id="map" style="width: 1280px; height: 800px;"></div> 
-   --><script type="text/javascript" src="maps.js"></script>
-</body> 
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>nearbuy Phase 1</title>
+</head>
+
+<body>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&signed_in=true&libraries=geometry"></script>
+    <script type="text/javascript" src="maps.js"></script>
+    <script type="text/javascript" src="setCircle.js"></script>
+    <script type="text/javascript" src="getDistance.js"></script>
+    
+    <input type="file" name="file" id="file" onchange="handle_files(this.files)" />
+    <div id="googleMap" style="width: 800px; height: 600px;"></div>
+    <input type="range" min="0" max="100" value="0" step="5" onchange="handle_files(this.files);"/>
+    <div id="slider">
+        <span id="range">0</span>
+        <br>
+        <font>Scale 1 = 1000 KM </font>
+    </div>
+</body>
+
 </html>
