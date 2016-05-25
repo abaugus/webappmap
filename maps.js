@@ -5,9 +5,9 @@ function calcDistance(p1, p2) {
 }
 var p1 = new google.maps.LatLng(45.463688, 9.18814);
 var p2 = new google.maps.LatLng(46.0438317, 9.75936230000002);
-
-window.alert(calcDistance(p1, p2)); // distance in m
 */
+window.alert(calcDistance(45.463688, 9.18814, 46.0438317, 9.75936230000002)); // distance in m
+
 function getCoor() {
     return coordinates;
 }
