@@ -4,7 +4,7 @@
 var radius = 0;
 
 function showValue(newValue){
-	var scale = 10000; 
+	var scale = 1000; 
 	document.getElementById("range").innerHTML=newValue*scale;
 	radius = newValue*scale;
 }

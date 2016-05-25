@@ -29,12 +29,11 @@ function handle_files(files) {
                 for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
-                    } else {
+                    } 
+                    else {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
-                        //window.alert(getRadius());
-                        window.alert(Distance(coordinates[count],center));
                         if(Distance(coordinates[count],center)<=getRadius())
                         {
                             marker = new google.maps.Marker({
