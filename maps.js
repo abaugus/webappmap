@@ -15,7 +15,6 @@ google.maps.Map.prototype.clearMarkers = function() {
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    google.maps.Map.prototype.clearMarkers();
     var center=new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
@@ -56,6 +55,21 @@ function handle_files(files) {
                                 infowindow.open(map, marker);
                             }
                             })(marker, i));
+                        }
+                        else 
+                        {
+                            marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(latitude, longitude),
+                            map: map
+                            });
+
+                            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            return function() {
+                                //infowindow.setContent(locations[i][0]); // shows info about locations
+                                infowindow.open(map, marker);
+                            }
+                            })(marker, i));
+                            marker.setVisible(false);    
                         }
                         count++;
                     }
