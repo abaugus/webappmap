@@ -16,13 +16,6 @@ function getCoor() {
     return coordinates;
 }
 
-google.maps.Map.prototype.clearMarkers = function() {
-    for(var i=0; i < this.markers.length; i++){
-        this.markers[i].setMap(null);
-    }
-    this.markers = new Array();
-};
-
 /*
     Handle input files and show them in Map
 */
