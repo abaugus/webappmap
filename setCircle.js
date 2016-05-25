@@ -5,6 +5,7 @@ var radius;
 
 function showValue(newValue){
 	document.getElementById("range").innerHTML=newValue;
+	window.alert(newValue);
 	radius = newValue;
 }
 
