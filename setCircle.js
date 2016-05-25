@@ -3,12 +3,13 @@
 */
 var radius;
 
-function showValue(newValue)
-{
+function showValue(newValue){
 	document.getElementById("range").innerHTML=newValue;
 	radius = newValue;
 }
 
 function getRadius(){
-    window.alert(radius);
+	window.alert(radius);
+    return radius;
 }
+var r = getRadius();
