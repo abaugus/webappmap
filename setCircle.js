@@ -1,14 +1,14 @@
 /*
 	Gets the radius from slider
 */
+var radius;
+
 function showValue(newValue)
 {
 	document.getElementById("range").innerHTML=newValue;
-	document.getElementById("range").value=newValue;
+	radius = newValue;
 }
-/*function getRadius(){
-    var Radius = document.getElementById("range").value; 
-    window.alert(Radius);
-    //return document.getElementById(range);
+
+function getRadius(){
+    window.alert(radius);
 }
-*/
