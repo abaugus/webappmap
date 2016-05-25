@@ -3,10 +3,19 @@ var map;
 function getCoor() {
     return coordinates;
 }
+
+function RemoveAllMarkers() {
+    while (markers.length > 0) {
+        markers.pop().setMap(null);
+    }
+    markers.length = 0;
+}
+
 /*
     Handle input files and show them in Map
 */
 function handle_files(files) {
+    RemoveAllMarkers();
     var center=new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
