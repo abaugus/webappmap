@@ -9,7 +9,7 @@ function setMapOnAll(map) {
 
 // Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {
-  setMapOnAll(null);
+setMapOnAll(null);
 }
 
 function getCoor() {
@@ -21,7 +21,7 @@ function getCoor() {
 */
 function handle_files(files) {
     clearMarkers();
-    var center=new google.maps.LatLng(28.636523, 77.224962);
+    var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
         console.log(file);
