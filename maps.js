@@ -4,18 +4,18 @@ function getCoor() {
     return coordinates;
 }
 
-function RemoveAllMarkers() {
-    while (markers.length > 0) {
-        markers.pop().setMap(null);
+google.maps.Map.prototype.clearMarkers = function() {
+    for(var i=0; i < this.markers.length; i++){
+        this.markers[i].setMap(null);
     }
-    markers.length = 0;
-}
+    this.markers = new Array();
+};
 
 /*
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    RemoveAllMarkers();
+    google.maps.Map.prototype.clearMarkers();
     var center=new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
