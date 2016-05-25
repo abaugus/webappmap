@@ -43,7 +43,7 @@ function handle_files(files) {
 
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
-                                //infowindow.setContent(locations[i][0]);
+                                //infowindow.setContent(locations[i][0]); // shows info about locations
                                 infowindow.open(map, marker);
                             }
                             })(marker, i));
@@ -57,28 +57,8 @@ function handle_files(files) {
                     bounds.extend(coordinates[c]);
                 }
                 map.fitBounds(bounds);
-                /*var locations = [
-                    ['Bondi Beach', 28.636523,77.224962, 4],
-                    ['Coogee Beach', 30.636523,75.224962, 5],
-                    ['Cronulla Beach', 32.636523,73.224962, 3],
-                    ['Manly Beach', 34.636523,71.224962, 2],
-                    ['Maroubra Beach', -33.950198, 151.259302, 1]
-                ];
-                for (var i = 0; i < locations.length; i++) {
-                    marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
-                        map: map
-                    });
-
-                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                        return function() {
-                            //infowindow.setContent(locations[i][0]);
-                            infowindow.open(map, marker);
-                        }
-                    })(marker, i));
-                }*/
             }
-
+        
         }
         reader.onerror = function(stuff) {
             console.log("error", stuff);
