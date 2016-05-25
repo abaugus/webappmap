@@ -1,4 +1,16 @@
 var map;
+var markers = [];
+
+function setMapOnAll(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+  setMapOnAll(null);
+}
 
 function getCoor() {
     return coordinates;
@@ -15,6 +27,7 @@ google.maps.Map.prototype.clearMarkers = function() {
     Handle input files and show them in Map
 */
 function handle_files(files) {
+    clearMarkers();
     var center=new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
@@ -48,7 +61,6 @@ function handle_files(files) {
                             position: new google.maps.LatLng(latitude, longitude),
                             map: map
                             });
-
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
                                 //infowindow.setContent(locations[i][0]); // shows info about locations
