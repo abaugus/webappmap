@@ -7,7 +7,7 @@ function getCoor() {
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    var center="New Delhi,India";
+    var center=new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
         console.log(file);
@@ -33,7 +33,8 @@ function handle_files(files) {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
-                        window.alert(getRadius());
+                        //window.alert(getRadius());
+                        window.alert(coordinates[count],center);
                         if(Distance(coordinates[count],center)<=getRadius())
                         {
                             marker = new google.maps.Marker({
