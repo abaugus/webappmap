@@ -1,7 +1,7 @@
 /*
 	Gets the radius from slider
 */
-var radius;
+var radius = 0;
 
 function showValue(newValue){
 	document.getElementById("range").innerHTML=newValue;
