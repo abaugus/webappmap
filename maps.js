@@ -1,5 +1,5 @@
 var map;
-
+/*
 function calcDistance(p1, p2) {
   return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2)).toFixed(2);
 }
@@ -7,7 +7,7 @@ var p1 = new google.maps.LatLng(45.463688, 9.18814);
 var p2 = new google.maps.LatLng(46.0438317, 9.75936230000002);
 
 window.alert(calcDistance(p1, p2)); // distance in m
-
+*/
 function getCoor() {
     return coordinates;
 }
