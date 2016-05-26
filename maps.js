@@ -18,7 +18,7 @@ function getCoor() {
 }
 
 function resetFile() {
-    this.value = null;
+    this.files = null;
 }
 
 function testCircle() {
@@ -69,7 +69,6 @@ function handle_files(files) {
                                 position: new google.maps.LatLng(latitude, longitude),
                                 map: map
                             });
-                            window.alert("hello");
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                                 return function() {
                                     //infowindow.setContent(locations[i][0]); // shows info about locations
@@ -88,7 +87,6 @@ function handle_files(files) {
                     }
                     check = 1;
                 } else {
-                    window.alert("sdfsdf");
                     for (var c = 0; c < markers.length; c++) {
 
                         if (Distance(coordinates[c], center) <= getRadius()) {
