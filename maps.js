@@ -69,6 +69,7 @@ function handle_files(files) {
                                     position: new google.maps.LatLng(latitude, longitude),
                                     map: map
                                 });
+                                window.alert("hello");
                                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
                                     return function() {
                                         //infowindow.setContent(locations[i][0]); // shows info about locations
