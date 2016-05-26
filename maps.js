@@ -23,9 +23,6 @@ input.onclick = function () {
     this.value = null;
 };
 
-input.onchange = function () {
-    alert(this.value);
-};
 
 /*
     Handle input files and show them in Map
