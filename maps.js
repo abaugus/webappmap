@@ -20,12 +20,10 @@ var check=0;
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    //clearMarkers();
     window.alert("handle_files");
     var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
     {   
-        //window.alert("insideloop");
         file = files[i];
         console.log(file);
         var reader = new FileReader();
@@ -43,7 +41,6 @@ function handle_files(files) {
                 var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
-                window.alert("went");
                         
                 if(check==0)
                 {
@@ -55,24 +52,19 @@ function handle_files(files) {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
-                        //window.alert(Distance(coordinates[count],center));
-                        //window.alert(getRadius());
-                        //if(Distance(coordinates[count],center)<=getRadius())
-                        {
-                            marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(latitude, longitude),
-                            map: map
-                            });
-                            markers[count]=marker;
-                            window.alert(marker);
-                            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                            return function() {
-                                //infowindow.setContent(locations[i][0]); // shows info about locations
-                                infowindow.open(map, marker);
-                            }
-                            google.maps.event.addListener(marker,)
-                            })(marker, i));
+                        marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(latitude, longitude),
+                        map: map
+                        });
+                        markers[count]=marker;
+                        window.alert(marker);
+                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                            //infowindow.setContent(locations[i][0]); // shows info about locations
+                            infowindow.open(map, marker);
                         }
+                        google.maps.event.addListener(marker,)
+                        })(marker, i));
                         count++;
                     }
                     check=1;
