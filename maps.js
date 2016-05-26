@@ -21,6 +21,8 @@ function testCircle() {
     window.alert(getRadius());
     for (var c = 0; c < markers.length; c++) {
 
+        window.alert(Distance(coordinates[c], center));
+        window.alert(getRadius());
         if (Distance(coordinates[c], center) <= getRadius()) {
             markers[c].setMap(map);
         } else {
