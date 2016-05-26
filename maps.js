@@ -15,12 +15,14 @@ setMapOnAll(null);
 function getCoor() {
     return coordinates;
 }
-
+var check=1;
 /*
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    clearMarkers();
+    //clearMarkers();
+    window.alert(check);
+    ++check;
     var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
@@ -73,6 +75,7 @@ function handle_files(files) {
             }
         
         }
+        reader.onloa
         reader.onerror = function(stuff) {
             console.log("error", stuff);
             console.log(stuff.getMessage());
