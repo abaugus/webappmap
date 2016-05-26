@@ -69,8 +69,10 @@ function handle_files(files) {
                         }
                         else
                         {
+                            window.alert("else");
                             if(dua<markers.length)
                             {
+                                window.alert("elsesetmap");
                                 markers[dua].setMap(null);  
                             }
                         }
