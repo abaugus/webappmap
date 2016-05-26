@@ -15,7 +15,7 @@ setMapOnAll(null);
 function getCoor() {
     return coordinates;
 }
-var check=1;
+var check=0;
 /*
     Handle input files and show them in Map
 */
@@ -31,7 +31,6 @@ function handle_files(files) {
         ret = [];
         reader.onload = function(e) {
             window.alert(check);
-            ++check;
             console.log(e.target.result);
             var lines = e.target.result.split('\n');
             var bounds = new google.maps.LatLngBounds();
@@ -45,7 +44,9 @@ function handle_files(files) {
                 var marker, i;
                 window.alert("went");
                         
-                for (var dua = 0; dua < point.length; dua++) {
+                //if(check==0)
+                {
+                    for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
                     } 
@@ -68,20 +69,31 @@ function handle_files(files) {
                                 //infowindow.setContent(locations[i][0]); // shows info about locations
                                 infowindow.open(map, marker);
                             }
+                            google.maps.event.addListener(marker,)
                             })(marker, i));
                         }
                         else
                         {
                             window.alert("else");
-                            if(dua<markers.length)
+                            if(count<markers.length)
                             {
                                 window.alert("elsesetmap");
-                                markers[dua].setMap(null);  
+                                markers[count].setMap(null);  
                             }
                         }
                         count++;
                     }
+                    ++check;
                 }
+                /*else
+                {
+                    for(var dua=0; dua<markers.length;dua++)
+                    {
+                        if()
+                    }
+                }*/
+                }
+                
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
