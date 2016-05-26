@@ -15,6 +15,7 @@ function getRadius(){
 
 function testCircle(){
 	for (var c = 0; c < markers.length; c++) {
+		
         if (Distance(coordinates[c], center) <= getRadius()) {
             markers[c].setMap(map);
         } else {
