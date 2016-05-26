@@ -17,6 +17,16 @@ function getCoor() {
     return coordinates;
 }
 
+var input = document.getElementsByTagName('input')[0];
+
+input.onclick = function () {
+    this.value = null;
+};
+
+input.onchange = function () {
+    alert(this.value);
+};
+
 /*
     Handle input files and show them in Map
 */
