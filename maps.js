@@ -41,7 +41,8 @@ function handle_files(files) {
                 var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
-
+                window.alert("went");
+                        
                 for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
@@ -50,7 +51,6 @@ function handle_files(files) {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
-                        window.alert("went");
                         if(Distance(coordinates[count],center)<=getRadius())
                         {
                             marker = new google.maps.Marker({
@@ -64,15 +64,6 @@ function handle_files(files) {
                                 infowindow.open(map, marker);
                             }
                             })(marker, i));
-                        }
-                        else
-                        {
-                            /*if(dua<markers.length)
-                            {
-                                markers[dua].setMap(null);    
-                                window.alert("inside",check);
-                            }*/
-                            
                         }
                         count++;
                     }
