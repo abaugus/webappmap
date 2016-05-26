@@ -16,6 +16,7 @@ function getRadius(){
 
 function testCircle(){
 	var radius=showValue(newValue);
+	window.alert(radius);
 	for (var c = 0; c < markers.length; c++) {
 
         if (Distance(coordinates[c], center) <= radius) {
