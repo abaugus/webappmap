@@ -56,12 +56,22 @@ function handle_files(files) {
                             position: new google.maps.LatLng(latitude, longitude),
                             map: map
                             });
+                            markers[dua]=marker;
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
                                 //infowindow.setContent(locations[i][0]); // shows info about locations
                                 infowindow.open(map, marker);
                             }
                             })(marker, i));
+                        }
+                        else
+                        {
+                            if(dua<markers.length)
+                            {
+                                marker[dua].setMap(null);    
+                                window.alert("inside",check);
+                            }
+                            
                         }
                         count++;
                     }
