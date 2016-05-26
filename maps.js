@@ -76,7 +76,6 @@ function handle_files(files) {
             }
         
         }
-        reader.onloa
         reader.onerror = function(stuff) {
             console.log("error", stuff);
             console.log(stuff.getMessage());
