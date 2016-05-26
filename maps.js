@@ -3,14 +3,14 @@ var markers = [];
 var check = 0;
 
 function setMapOnAll(map) {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
 }
 
 // Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {
-setMapOnAll(null);
+    setMapOnAll(null);
 }
 
 function getCoor() {
@@ -21,7 +21,7 @@ function resetFile() {
     this.value = null;
 }
 
-function testCircle(){
+function testCircle() {
     window.alert(getRadius());
     for (var c = 0; c < markers.length; c++) {
 
@@ -58,51 +58,55 @@ function handle_files(files) {
                 var marker, i;
 
                 if (check == 0) {
-                        for (var dua = 0; dua < point.length; dua++) {
-                            if (dua % 2 == 0) {
-                                var latitude = point[dua];
+                    for (var dua = 0; dua < point.length; dua++) {
+                        if (dua % 2 == 0) {
+                            var latitude = point[dua];
+                        } else {
+                            var longitude = point[dua];
+                            coordinates[count] = new google.maps.LatLng(latitude, longitude);
+                            console.log(coordinates[count]);
+                            marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(latitude, longitude),
+                                map: map
+                            });
+                            window.alert("hello");
+                            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                                return function() {
+                                    //infowindow.setContent(locations[i][0]); // shows info about locations
+                                    infowindow.open(map, marker);
+                                }
+                            })(marker, i));
+
+                            markers[count] = marker;
+                            if (Distance(coordinates[count], center) <= getRadius()) {
+                                markers[count].setMap(map);
                             } else {
-                                var longitude = point[dua];
-                                coordinates[count] = new google.maps.LatLng(latitude, longitude);
-                                console.log(coordinates[count]);
-                                marker = new google.maps.Marker({
-                                    position: new google.maps.LatLng(latitude, longitude),
-                                    map: map
-                                });
-                                window.alert("hello");
-                                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                                    return function() {
-                                        //infowindow.setContent(locations[i][0]); // shows info about locations
-                                        infowindow.open(map, marker);
-                                    }
-                                })(marker, i));
-                                markers[count] = marker;
-                                count++;
+                                markers[count].setMap(null);
                             }
+                            count++;
                         }
-                        check = 1;
                     }
-                    else
-                    {
-                        window.alert("sdfsdf");
-                        for (var c = 0; c < markers.length; c++) {
+                    check = 1;
+                } else {
+                    window.alert("sdfsdf");
+                    for (var c = 0; c < markers.length; c++) {
 
-        if (Distance(coordinates[c], center) <= getRadius()) {
-            markers[c].setMap(map);
-        } else {
-            markers[c].setMap(null);
-        }
-    }           
+                        if (Distance(coordinates[c], center) <= getRadius()) {
+                            markers[c].setMap(map);
+                        } else {
+                            markers[c].setMap(null);
+                        }
                     }
+                }
 
-            var locations = [];
+                var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
                     bounds.extend(coordinates[c]);
                 }
                 map.fitBounds(bounds);
             }
-        
+
         }
         reader.onerror = function(stuff) {
             console.log("error", stuff);
