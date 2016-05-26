@@ -67,11 +67,11 @@ function handle_files(files) {
                         }
                         else
                         {
-                            if(dua<markers.length)
+                            /*if(dua<markers.length)
                             {
                                 markers[dua].setMap(null);    
                                 window.alert("inside",check);
-                            }
+                            }*/
                             
                         }
                         count++;
