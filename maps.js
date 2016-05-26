@@ -17,10 +17,6 @@ function getCoor() {
     return coordinates;
 }
 
-function resetFile() {
-    this.files = null;
-}
-
 function testCircle() {
     window.alert(getRadius());
     for (var c = 0; c < markers.length; c++) {
