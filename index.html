@@ -12,14 +12,14 @@
     <script type="text/javascript" src="setCircle.js"></script>
     <script type="text/javascript" src="getDistance.js"></script>
     
-    <input type="file" name="file" id="file" onchange="handle_files(this.files)" />
+    <input type="file" name="file" id="file" onchange="handle_files(this.files); this.value=null; return false;" />
     <div id="googleMap" style="width: 800px; height: 600px;"></div>
-    <input type="range" min="0" max="100" value="0" step="5" onchange="handle_files(this.files);"/>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="showValue(this.value);"/>
     <div id="slider">
         <span id="range">0</span>
-        <br>
-        <font>Scale 1 = 1000 KM </font>
+        <span> KM </span>
     </div>
+    <button type="button" onclick="testCircle();">Get Results</button>
 </body>
 
 </html>

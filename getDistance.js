@@ -1,5 +1,5 @@
 /* 
-	Shows the distance between two LatLng
+	Shows the distance between two LatLng in KM
 */
 function Distance(p1,p2){
 	//var p1 = new google.maps.LatLng(40.718119, -73.995667);
