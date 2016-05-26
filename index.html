@@ -7,17 +7,14 @@
 </head>
 
 <body>
-    <font>Hello World </font>>
     <script src="https://maps.googleapis.com/maps/api/js?v=3&signed_in=true&libraries=geometry"></script>
     <script type="text/javascript" src="maps.js"></script>
     <script type="text/javascript" src="setCircle.js"></script>
     <script type="text/javascript" src="getDistance.js"></script>
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    
     <input type="file" name="file" id="file" onchange="handle_files(this.files)" />
-    <input type="submit" onsubmit="handle_files(this.files)" />
     <div id="googleMap" style="width: 800px; height: 600px;"></div>
-    <input type="range" min="0" max="100" value="0" step="5" onchange="showValue(this.value);handle_files(this.files);" />
+    <input type="range" min="0" max="100" value="0" step="5" onchange="showValue(this.value);handle_files(this.files);"/>
     <div id="slider">
         <span id="range">0</span>
         <br>
