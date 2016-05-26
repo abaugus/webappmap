@@ -59,6 +59,7 @@ function handle_files(files) {
                             map: map
                             });
                             markers[dua]=marker;
+                            window.alert(marker);
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
                                 //infowindow.setContent(locations[i][0]); // shows info about locations
@@ -68,9 +69,9 @@ function handle_files(files) {
                         }
                         else
                         {
-                            if(markers.length>dua)
+                            if(dua<markers.length)
                             {
-                                markers[dua].setMap(null);
+                                markers[dua].setMap(null);  
                             }
                         }
                         count++;
