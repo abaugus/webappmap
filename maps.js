@@ -21,8 +21,6 @@ var check=1;
 */
 function handle_files(files) {
     //clearMarkers();
-    window.alert(check);
-    ++check;
     var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
@@ -30,6 +28,8 @@ function handle_files(files) {
         var reader = new FileReader();
         ret = [];
         reader.onload = function(e) {
+            window.alert(check);
+            ++check;
             console.log(e.target.result);
             var lines = e.target.result.split('\n');
             var bounds = new google.maps.LatLngBounds();
