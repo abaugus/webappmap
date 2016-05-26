@@ -7,9 +7,9 @@ var check=0;
 function handle_files(files) {
     window.alert("handle_files");
     var center = new google.maps.LatLng(28.636523, 77.224962);
-    for (var i = 0; i < files.length; i++) {
+    for (var len = 0; len < files.length; len++) {
     {   
-        file = files[i];
+        file = files[len];
         console.log(file);
         var reader = new FileReader();
         ret = [];
@@ -24,7 +24,7 @@ function handle_files(files) {
                 var count = 0;
                 var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
-                var marker;
+                var marker , i;
                         
                 if(check==0)
                 {
