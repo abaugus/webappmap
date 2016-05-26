@@ -68,7 +68,7 @@ function handle_files(files) {
                         {
                             if(dua<markers.length)
                             {
-                                marker[dua].setMap(null);    
+                                markers[dua].setMap(null);    
                                 window.alert("inside",check);
                             }
                             
