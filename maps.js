@@ -5,13 +5,8 @@ var coordinates = [];
 var center = new google.maps.LatLng(28.636523, 77.224962);
     
 function testCircle() {
-    window.alert(getRadius());
-    window.alert(markers.length);
-    window.alert(coordinates);
     for (var c = 0; c < markers.length; c++) {
 
-        window.alert(Distance(coordinates[c], center));
-        window.alert(getRadius());
         if (Distance(coordinates[c], center) <= getRadius()) {
             markers[c].setMap(map);
         } else {
