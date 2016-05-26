@@ -65,14 +65,11 @@ function handle_files(files) {
                         }
                         check = 1;
                     }
-
-                for (var c = 0; c < markers.length; c++) {
-                    if (Distance(coordinates[c], center) >= getRadius()) {
-                        markers[c].setMap(map);
-                    } else {
-                        markers[c].setMap(null);
+                    else
+                    {
+                        testCircle();            
                     }
-                }
+
             var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
