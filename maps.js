@@ -83,6 +83,7 @@ function handle_files(files) {
                     }
                     else
                     {
+                        window.alert("asd");
                         testCircle();            
                     }
 
