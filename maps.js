@@ -17,9 +17,9 @@ function getCoor() {
     return coordinates;
 }
 
-function resetfile() {
+function resetFile() {
     this.value = null;
-};
+}
 
 function testCircle(){
     window.alert(getRadius());
@@ -83,7 +83,6 @@ function handle_files(files) {
                     }
                     else
                     {
-                        window.alert("asd");
                         testCircle();            
                     }
 
