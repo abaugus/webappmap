@@ -83,7 +83,6 @@ function handle_files(files) {
                                         //infowindow.setContent(locations[i][0]); // shows info about locations
                                         infowindow.open(map, marker);
                                     }
-                                    google.maps.event.addListener(marker, )
                                 })(marker, i));
                                 markers[count] = marker;
                                 count++;
@@ -92,14 +91,14 @@ function handle_files(files) {
                         check = 1;
                     }
 
-                    for (var c = 0; c < markers.length; c++) {
-                        if (Distance(coordinates[c], center) <= getRadius()) {
-                            markers[c].setMap(map);
-                        } else {
-                            markers[c].setMap(null);
-                        }
+                for (var c = 0; c < markers.length; c++) {
+                    if (Distance(coordinates[c], center) <= getRadius()) {
+                        markers[c].setMap(map);
+                    } else {
+                        markers[c].setMap(null);
                     }
-                var locations = [];
+                }
+            var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
                     locations.push(coordinates[c]);
                     bounds.extend(coordinates[c]);
