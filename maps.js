@@ -21,6 +21,7 @@ var check=1;
 */
 function handle_files(files) {
     //clearMarkers();
+    window.alert("handle_files");
     var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
