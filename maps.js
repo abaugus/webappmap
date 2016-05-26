@@ -1,20 +1,5 @@
 var map;
 var markers = [];
-
-function setMapOnAll(map) {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-setMapOnAll(null);
-}
-
-function getCoor() {
-    return coordinates;
-}
 var check=0;
 /*
     Handle input files and show them in Map
@@ -22,14 +7,13 @@ var check=0;
 function handle_files(files) {
     window.alert("handle_files");
     var center = new google.maps.LatLng(28.636523, 77.224962);
-    for (i = 0; i < files.length; i++) {
+    for (var i = 0; i < files.length; i++) {
     {   
         file = files[i];
         console.log(file);
         var reader = new FileReader();
         ret = [];
         reader.onload = function(e) {
-            window.alert(check);
             console.log(e.target.result);
             var lines = e.target.result.split('\n');
             var bounds = new google.maps.LatLngBounds();
@@ -40,32 +24,33 @@ function handle_files(files) {
                 var count = 0;
                 var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
-                var marker, i;
+                var marker;
                         
                 if(check==0)
                 {
                     for (var dua = 0; dua < point.length; dua++) {
-                    if (dua % 2 == 0) {
-                        var latitude = point[dua];
-                    } 
-                    else {
-                        var longitude = point[dua];
-                        coordinates[count] = new google.maps.LatLng(latitude, longitude);
-                        console.log(coordinates[count]);
-                        marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(latitude, longitude),
-                        map: map
-                        });
-                        markers[count]=marker;
-                        window.alert(marker);
-                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                        return function() {
-                            //infowindow.setContent(locations[i][0]); // shows info about locations
-                            infowindow.open(map, marker);
+                        if (dua % 2 == 0) {
+                            var latitude = point[dua];
+                        } 
+                        else {
+                            var longitude = point[dua];
+                            coordinates[count] = new google.maps.LatLng(latitude, longitude);
+                            console.log(coordinates[count]);
+                            marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(latitude, longitude),
+                            map: map
+                            });
+                            markers[count]=marker;
+                            window.alert(marker);
+                            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            return function() {
+                                //infowindow.setContent(locations[i][0]); // shows info about locations
+                                infowindow.open(map, marker);
+                            }
+                            google.maps.event.addListener(marker,)
+                            })(marker, i));
+                            count++;
                         }
-                        google.maps.event.addListener(marker,)
-                        })(marker, i));
-                        count++;
                     }
                     check=1;
                 }
