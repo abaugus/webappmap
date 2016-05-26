@@ -5,9 +5,9 @@ var check=0;
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    window.alert("handle_files");
+    //window.alert("handle_files");
     var center = new google.maps.LatLng(28.636523, 77.224962);
-    for (var len = 0; len < files.length; len++) {
+    for (i=0;i<files.length;i++) {
     {   
         file = files[len];
         console.log(file);
@@ -40,8 +40,6 @@ function handle_files(files) {
                             position: new google.maps.LatLng(latitude, longitude),
                             map: map
                             });
-                            markers[count]=marker;
-                            window.alert(marker);
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
                                 //infowindow.setContent(locations[i][0]); // shows info about locations
@@ -49,6 +47,7 @@ function handle_files(files) {
                             }
                             google.maps.event.addListener(marker,)
                             })(marker, i));
+                            markers[count]=marker;
                             count++;
                         }
                     }
