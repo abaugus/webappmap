@@ -45,7 +45,7 @@ function handle_files(files) {
                 window.alert("went");
                         
                 //if(check==0)
-                {
+                //{
                     for (var dua = 0; dua < point.length; dua++) {
                     if (dua % 2 == 0) {
                         var latitude = point[dua];
@@ -62,7 +62,7 @@ function handle_files(files) {
                             position: new google.maps.LatLng(latitude, longitude),
                             map: map
                             });
-                            markers[dua]=marker;
+                            markers[count]=marker;
                             window.alert(marker);
                             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                             return function() {
@@ -91,8 +91,8 @@ function handle_files(files) {
                     {
                         if()
                     }
-                }*/
                 }
+                }*/
                 
                 var locations = [];
                 for (var c = 0; c < coordinates.length; c++) {
