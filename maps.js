@@ -19,6 +19,7 @@ function getCoor() {
 
 function testCircle() {
     window.alert(getRadius());
+    window.alert(markers.length);
     for (var c = 0; c < markers.length; c++) {
 
         window.alert(Distance(coordinates[c], center));
