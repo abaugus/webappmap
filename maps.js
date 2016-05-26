@@ -52,6 +52,7 @@ function handle_files(files) {
                         var longitude = point[dua];
                         coordinates[count] = new google.maps.LatLng(latitude, longitude);
                         console.log(coordinates[count]);
+                        window.alert(Distance(coordinates[count],center),getRadius());
                         if(Distance(coordinates[count],center)<=getRadius())
                         {
                             marker = new google.maps.Marker({
