@@ -2,10 +2,12 @@ var map;
 var markers = [];
 var check = 0;
 var coordinates = [];
-
+var center = new google.maps.LatLng(28.636523, 77.224962);
+    
 function testCircle() {
     window.alert(getRadius());
     window.alert(markers.length);
+    window.alert(coordinates);
     for (var c = 0; c < markers.length; c++) {
 
         window.alert(Distance(coordinates[c], center));
@@ -23,7 +25,6 @@ function testCircle() {
 */
 function handle_files(files) {
     //clearMarkers();
-    var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
         console.log(file);
