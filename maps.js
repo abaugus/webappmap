@@ -19,10 +19,22 @@ function getCoor() {
 
 var input = document.getElementsByTagName('input')[0];
 
-input.onclick = function () {
+function resetfile() {
     this.value = null;
 };
 
+function testCircle(){
+    var radius=showValue(newValue);
+    window.alert(radius);
+    for (var c = 0; c < markers.length; c++) {
+
+        if (Distance(coordinates[c], center) <= radius) {
+            markers[c].setMap(map);
+        } else {
+            markers[c].setMap(null);
+        }
+    }
+}
 
 /*
     Handle input files and show them in Map
