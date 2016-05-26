@@ -20,7 +20,7 @@ function getCoor() {
     Handle input files and show them in Map
 */
 function handle_files(files) {
-    clearMarkers();
+    //clearMarkers();
     var center = new google.maps.LatLng(28.636523, 77.224962);
     for (i = 0; i < files.length; i++) {
         file = files[i];
