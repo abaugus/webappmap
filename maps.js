@@ -1,7 +1,7 @@
 var map;
 var markers = [];
 var check = 0;
-
+var coordinates = [];
 function setMapOnAll(map) {
     for (var i = 0; i < markers.length; i++) {
         markers[i].setMap(map);
@@ -52,7 +52,7 @@ function handle_files(files) {
                 var point = lines[line].split(',');
 
                 var count = 0;
-                var coordinates = [];
+                //var coordinates = [];
                 var infowindow = new google.maps.InfoWindow();
                 var marker, i;
 
