@@ -2,20 +2,6 @@ var map;
 var markers = [];
 var check = 0;
 var coordinates = [];
-function setMapOnAll(map) {
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
-    }
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-    setMapOnAll(null);
-}
-
-function getCoor() {
-    return coordinates;
-}
 
 function testCircle() {
     window.alert(getRadius());
