@@ -66,6 +66,13 @@ function handle_files(files) {
                             }
                             })(marker, i));
                         }
+                        else
+                        {
+                            if(markers.length>dua)
+                            {
+                                markers[dua].setMap(null);
+                            }
+                        }
                         count++;
                     }
                 }
