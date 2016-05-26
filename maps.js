@@ -83,6 +83,7 @@ function handle_files(files) {
                     }
                     else
                     {
+                        window.alert("sdfsdf");
                         for (var c = 0; c < markers.length; c++) {
 
         if (Distance(coordinates[c], center) <= getRadius()) {
