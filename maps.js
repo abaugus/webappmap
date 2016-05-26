@@ -24,11 +24,10 @@ function resetfile() {
 };
 
 function testCircle(){
-    var radius=showValue(newValue);
-    window.alert(radius);
+    window.alert(getRadius());
     for (var c = 0; c < markers.length; c++) {
 
-        if (Distance(coordinates[c], center) <= radius) {
+        if (Distance(coordinates[c], center) <= getRadius()) {
             markers[c].setMap(map);
         } else {
             markers[c].setMap(null);
