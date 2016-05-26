@@ -1,6 +1,6 @@
 var map;
 var markers = [];
-var check=0;
+var check = 0;
 
 function setMapOnAll(map) {
   for (var i = 0; i < markers.length; i++) {
@@ -16,8 +16,6 @@ setMapOnAll(null);
 function getCoor() {
     return coordinates;
 }
-
-var input = document.getElementsByTagName('input')[0];
 
 function resetfile() {
     this.value = null;
