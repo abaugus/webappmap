@@ -14,7 +14,8 @@ function testCircle() {
         }
     }
 }
-
+angular.module('myApplicationModule', ['uiGmapgoogle-maps']);
+$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 /*
     Handle input files and show them in Map
 */
