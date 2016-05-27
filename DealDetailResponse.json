@@ -1,0 +1,320 @@
+{  
+    "deal":{  
+        "dealId":"6244",
+        "vertical":"local",
+        "title":"Buffet with Choice of Drinks and More",
+        "dealUrl":"http://www.iwanto.in/deal/delhi-ncr/sector-55-noida/The-Great-Kabab-Factory-6244/6244",
+        "startAt":1457029800,
+        "endAt":1467311399,
+        "dealImageUrl":"http://img1.nbstatic.in/la-webp-m/56d818720b04513f4179652c.jpg",
+        "isSoldOut":false,
+        "soldQuantity":89,
+        "soldQuantityMessage":"89",
+        "options":[  
+            {  
+                "id":"11456856679143",
+                "discountPercent":27,
+                "isSoldOut":false,
+                "title":"UNLIMITED Lunch with UNLIMITED Soft Drinks",
+                "endAt":null,
+                "discount":null,
+                "price":{  
+                    "amount":1099,
+                    "formattedAmount":"1099",
+                    "currencyCode":"INR"
+                },
+                "value":{  
+                    "amount":1500,
+                    "formattedAmount":"1500",
+                    "currencyCode":"INR"
+                },
+                "tax":null,
+                "details":null,
+                "redemptionLocations":null,
+                "instructions":null,
+                "subTitle":null,
+                "optionFilter1":null,
+                "optionFilter2":null,
+                "optionFilter3":null,
+                "selectedImage":null,
+                "soldQuantity":35,
+                "soldQuantityMessage":"35",
+                "minimumPurchaseQuantity":1,
+                "maximumPurchaseQuantity":20,
+                "initialQuantity":null,
+                "remainingQuantity":965,
+                "limitedQuantityRemaining":null,
+                "isLimitedQuantity":null,
+                "expiresAt":null,
+                "buyUrl":null,
+                "externalUrl":null,
+                "expiresInDays":null,
+                "status":null,
+                "uuid":null,
+                "cda":null,
+                "offerDescription":"",
+                "offerValidity":{  
+                    "redeemDates":[  
+                        {  
+                            "fromDate":1457029800,
+                            "toDate":1467311399
+                        }
+                    ],
+                    "validFor":1,
+                    "description":null,
+                    "vd":"Valid at The Great Kabab Factory \nValid 7 days a week"
+                },
+                "isMrpVisible":true,
+                "knowMoreLabel":"Know More",
+                "knowMoreHtml":"<div><b><h3>UNLIMITED Lunch with UNLIMITED Soft Drinks</h3></b><p><ul style=\"list-style-position: inside;padding:0;margin:0;\"><div></div><li>Valid until : 30-Jun-2016</li><li>Valid for   : 1 person</li><li>Valid at The Great Kabab Factory \nValid 7 days a week</li></ul></p></div>",
+                "dealId":"11456856679143",
+                "systemDealId":"6244",
+                "nights":0,
+                "adults":null,
+                "salesforceId":null,
+                "roomName":null,
+                "dayUse":false,
+                "isClosed":false,
+                "displayOrder":1,
+                "addons":null
+            },
+            {  
+                "id":"21456856597616",
+                "discountPercent":44,
+                "isSoldOut":false,
+                "title":"UNLIMITED Dinner with UNLIMITED Soft Drinks",
+                "endAt":null,
+                "discount":null,
+                "price":{  
+                    "amount":1399,
+                    "formattedAmount":"1399",
+                    "currencyCode":"INR"
+                },
+                "value":{  
+                    "amount":2500,
+                    "formattedAmount":"2500",
+                    "currencyCode":"INR"
+                },
+                "tax":null,
+                "details":null,
+                "redemptionLocations":null,
+                "instructions":null,
+                "subTitle":null,
+                "optionFilter1":null,
+                "optionFilter2":null,
+                "optionFilter3":null,
+                "selectedImage":null,
+                "soldQuantity":26,
+                "soldQuantityMessage":"26",
+                "minimumPurchaseQuantity":1,
+                "maximumPurchaseQuantity":20,
+                "initialQuantity":null,
+                "remainingQuantity":974,
+                "limitedQuantityRemaining":null,
+                "isLimitedQuantity":null,
+                "expiresAt":null,
+                "buyUrl":null,
+                "externalUrl":null,
+                "expiresInDays":null,
+                "status":null,
+                "uuid":null,
+                "cda":null,
+                "offerDescription":"",
+                "offerValidity":{  
+                    "redeemDates":[  
+                        {  
+                            "fromDate":1457029800,
+                            "toDate":1467311399
+                        }
+                    ],
+                    "validFor":1,
+                    "description":null,
+                    "vd":"Valid at The Great Kabab Factory \nValid 7 days a week"
+                },
+                "isMrpVisible":true,
+                "knowMoreLabel":"Know More",
+                "knowMoreHtml":"<div><b><h3>UNLIMITED Dinner with UNLIMITED Soft Drinks</h3></b><p><ul style=\"list-style-position: inside;padding:0;margin:0;\"><div></div><li>Valid until : 30-Jun-2016</li><li>Valid for   : 1 person</li><li>Valid at The Great Kabab Factory \nValid 7 days a week</li></ul></p></div>",
+                "dealId":"21456856597616",
+                "systemDealId":"6244",
+                "nights":0,
+                "adults":null,
+                "salesforceId":null,
+                "roomName":null,
+                "dayUse":false,
+                "isClosed":false,
+                "displayOrder":2,
+                "addons":null
+            },
+            {  
+                "id":"21456856597619",
+                "discountPercent":39,
+                "isSoldOut":false,
+                "title":"UNLIMITED Dinner + 4 Domestic Drinks / Brewed Drinks",
+                "endAt":null,
+                "discount":null,
+                "price":{  
+                    "amount":1699,
+                    "formattedAmount":"1699",
+                    "currencyCode":"INR"
+                },
+                "value":{  
+                    "amount":2800,
+                    "formattedAmount":"2800",
+                    "currencyCode":"INR"
+                },
+                "tax":null,
+                "details":null,
+                "redemptionLocations":null,
+                "instructions":null,
+                "subTitle":null,
+                "optionFilter1":null,
+                "optionFilter2":null,
+                "optionFilter3":null,
+                "selectedImage":null,
+                "soldQuantity":28,
+                "soldQuantityMessage":"28",
+                "minimumPurchaseQuantity":1,
+                "maximumPurchaseQuantity":20,
+                "initialQuantity":null,
+                "remainingQuantity":972,
+                "limitedQuantityRemaining":null,
+                "isLimitedQuantity":null,
+                "expiresAt":null,
+                "buyUrl":null,
+                "externalUrl":null,
+                "expiresInDays":null,
+                "status":null,
+                "uuid":null,
+                "cda":null,
+                "offerDescription":"",
+                "offerValidity":{  
+                    "redeemDates":[  
+                        {  
+                            "fromDate":1457029800,
+                            "toDate":1467311399
+                        }
+                    ],
+                    "validFor":1,
+                    "description":null,
+                    "vd":"Valid at The Great Kabab Factory \nValid 7 days a week\nMixers are included"
+                },
+                "isMrpVisible":true,
+                "knowMoreLabel":"Know More",
+                "knowMoreHtml":"<div><b><h3>UNLIMITED Dinner + 4 Domestic Drinks / Brewed Drinks</h3></b><p><ul style=\"list-style-position: inside;padding:0;margin:0;\"><div></div><li>Valid until : 30-Jun-2016</li><li>Valid for   : 1 person</li><li>Valid at The Great Kabab Factory \nValid 7 days a week\nMixers are included</li></ul></p></div>",
+                "dealId":"21456856597619",
+                "systemDealId":"6244",
+                "nights":0,
+                "adults":null,
+                "salesforceId":null,
+                "roomName":null,
+                "dayUse":false,
+                "isClosed":false,
+                "displayOrder":3,
+                "addons":null
+            }
+        ],
+        "divisionId":"delhi-ncr",
+        "merchant":{  
+            "id":"55545",
+            "name":"The Great Kabab Factory",
+            "websiteUrl":"http://www.thegreatkababfactory.com/",
+            "facilities":[  
+                "Wi-fi available",
+                "Credit cards accepted",
+                "Air conditioned"
+            ],
+            "lng":77.350004,
+            "lat":28.604261,
+            "address":{  
+                "id":1196889,
+                "addressLine1":"Kamal Marg, C Block",
+                "locality":"Sector 55",
+                "subLocality":"Block C",
+                "cityTown":"Noida",
+                "state":"Uttar Pradesh",
+                "country":"India",
+                "pincode":"201307",
+                "mallMarket":null
+            },
+            "description":"Located in Noida.&nbsp;Food is best enjoyed when your five senses experience the magic of the food served at your table.. Come alive  at The Great Kabab Factory -an&nbsp;Indian specialty restaurant. They have a well thought menu with a wide variety of mouth watering dishes.",
+            "reservationEmailIds":[  
+                ""
+            ]
+        },
+        "discountPercent":27,
+        "priceAfterDiscount":1099,
+        "priceBeforeDiscount":1500,
+        "locations":[  
+            {  
+                "id":1196889,
+                "name":"The Great Kabab Factory",
+                "lat":28.604261,
+                "lng":77.350004,
+                "city":"Noida",
+                "streetAddress1":"Kamal Marg, C Block",
+                "postalCode":"201307",
+                "state":"Uttar Pradesh",
+                "streetAddress2":null,
+                "sublocation":"Block C",
+                "alias":"Sector 55 Noida"
+            }
+        ],
+        "images":[  
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56d818720b04513f4179652c.jpg"
+            },
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56deb3470b04513f4179d8b4.jpg"
+            },
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56d818d60b04513f41796552.jpg"
+            },
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56d818570b04513f41796522.jpg"
+            },
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56d818e30b04513f41796560.jpg"
+            },
+            {  
+                "url":"http://img1.nbstatic.in/la-webp-m/56d818a10b04513f4179653e.jpg"
+            }
+        ],
+        "locationNames":[  
+            "Sector 55 Noida"
+        ],
+        "descriptionHtml":{  
+            "About The Great Kabab Factory":"Located in Noida.&nbsp;Food is best enjoyed when your five senses experience the magic of the food served at your table.. Come alive  at The Great Kabab Factory -an&nbsp;Indian specialty restaurant. They have a well thought menu with a wide variety of mouth watering dishes.",
+            "Things to Remember":"<ul><li>Valid until: 30.06.2016</li><li>Timings: Lunch – 12:00 Noon to 3:00PM Dinner – 8:00PM to 11:00PM</li><li>Valid for dine-in. Not valid for takeaway / home delivery</li><li>Cannot be clubbed with any other existing offers</li><li>Child Policy - Child up to 12yrs – Rs.600 + taxes and Child between 12 to 18yrs - Separate voucher required</li><li>Aerated drinks will get served as mixers. Energy drinks, diet coke & mineral water are not included, customer will be charged extra.</li><li>Select drinks from the menu will be served</li><li>Packing of leftover food not allowed</li><li>Drinks will not be served for those under 21yrs of age</li><li>Offer not valid on blackout dates</li><li>Sharing of food is not allowed</li><li>Entry will be denied for failure to book reservations</li><li>Children allowed</li><li>Mixers are included</li><li>Prior reservation recommended</li></ul>",
+            "How to use the offer":"<ul><li>It is recommended that you make a prior reservation</li><li>Upon arrival, present the voucher on your phone</li><li>Redeem the voucher before consumption</li></ul>",
+            "Facilities":"<ul><li>Wi-fi available</li><li>Credit cards accepted</li><li>Air conditioned</li></ul>",
+            "Cancellation Policy":"Non-Cancellable"
+        },
+        "isClosed":false,
+        "allowMultipleOffers":false,
+        "descHtmlOrder":{  
+            "About The Great Kabab Factory":1,
+            "Things to Remember":2,
+            "How to use the offer":3,
+            "Facilities":4,
+            "Cancellation Policy":5
+        },
+        "mappedCategories":[  
+            "food-and-drink",
+            "Exclusive",
+            "TGKF",
+            "5-star-hotel",
+            "Romantic Dinner",
+            "Luxury Collection",
+            "Good for Gifting"
+        ],
+        "isCreditAllowed":true,
+        "isPromoAllowed":true,
+        "merchantTag":"The Great Kabab Factory",
+        "categoryId":"FNB",
+        "isMrpVisible":true,
+        "isDetailExpanded":true,
+        "favCount":440,
+        "isFav":0,
+        "soldOut":false
+    }
+}
